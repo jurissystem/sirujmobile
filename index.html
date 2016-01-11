@@ -3,9 +3,74 @@
 	<head>
 		<meta charset="utf8">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
+		
 		<title>Juris</title>
+		
+		<link rel="stylesheet" href="css/mobile.min.css" />
+		<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+		
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+		<script type="application/javascript" src="js/fastClick.min.js"></script>
 	</head>
 	<body>
+		<!--Página inicial-->
+		<div data-role="page" id="index">
+			<div data-role="header" class="topo">
+				<h1>Juris</h1>
+			</div>
+			<div data-role="content">
+				<form>
+					<fieldset>
+						<legend>
+							<h1>Entrar</h1>
+						</legend>
+						<label for="login">Login</label>
+						<input type="text" name="login">
+						<label for="senha">Senha</label>
+						<input type="password" name="senha">
+						<input type="button" value="<a href='#interface-usuario' data-transition='slide'>Entrar</a>">
+					</fieldset>
+				</form>
+				<a href="#cadastrar" data-transition="slide">Cadastrar-se</a>
+			</div>
+		</div>
 		
+		<!--Cadastro do usuario-->
+		<div data-role="page" id="cadastrar">
+			<div data-role="header" class="topo">
+				<h1>Cadastrar Usuário</h1>
+			</div>
+			<div data-role="content">
+				<form>
+					<fieldset>
+						<legend>
+							<h1>Cadastrar usuário</h1>
+							<label for="nome">Nome</label>
+							<input type="text" name="nome">
+							<label for="email">E-mail</label>
+							<input type="email" name="email">
+							<label for="telefone">Telefone</label>
+							<input type="number" name="telefone">
+							<label for="senha">Senha</label>
+							<input type="password" name="senha">
+							<label for="confirma">Cornfirme a senha</label>
+							<input type="password" name="confirma">
+							<input type="button" value="<a href='#index' data-transition='slide'>Enviar</a>">
+						</legend>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<!--Tela inicial-->
+		<div data-role="page" id="interface-usuario">
+			<div data-role="header" class="topo">
+				<h1>Juris</h1>
+			</div>
+			<div data-role="content">
+				
+			</div>
+		</div>
 	</body>
 </html>
